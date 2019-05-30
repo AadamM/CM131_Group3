@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Task : MonoBehaviour {
 
-    private string taskName;
-    private Member taskMember;
-    private int priority;
-    private float timeEstimate;
-    private enum progressState { assigned, inProgress, done };
-    private progressState currentProgress;
+    //private string taskName;
+    public string taskName;// { get; private set; }
+    //private Member taskMember;
+    public Member taskMember;// { get; private set; }
+    //private int priority;
+    public int priority;// { get; private set; }
+    //private float timeEstimate;
+    public float timeEstimate;// { get; private set; }
+    public enum progressState { assigned, inProgress, done };
+    //private progressState currentProgress;
+    public progressState currentProgress;// { get; private set; }
 
     public void AddTask (string refTaskName, Member refTaskMember, int refPriority, float refTimeEstimate){
         taskName = refTaskName;
@@ -19,4 +24,7 @@ public class Task : MonoBehaviour {
 
         currentProgress = progressState.assigned;
     }
+
+
+   
 }
