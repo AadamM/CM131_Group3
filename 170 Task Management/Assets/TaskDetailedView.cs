@@ -40,4 +40,6 @@ public class TaskDetailedView : MonoBehaviour
             reviewButton.onClick.AddListener(() => { gameObject.SetActive(false); });
         }
     }
+
+
 }

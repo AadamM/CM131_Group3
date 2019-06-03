@@ -31,7 +31,11 @@ public class MemberList : MonoBehaviour
 
     private void Hide(Scene arg0)
     {
-        gameObject.SetActive(false);
+        if (gameObject)
+        {
+            gameObject.SetActive(false);
+
+        }
     }
 
     // Start is called before the first frame update
